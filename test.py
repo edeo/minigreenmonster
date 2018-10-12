@@ -82,3 +82,42 @@ if balls == 0:
   gpio 
   
   
+  
+from gpiozero import LED
+from time import sleep
+
+
+ball1 = LED(2)
+ball2 = LED(3)
+ball3 = LED(4)
+strike1 = LED(17)
+strike2 = LED(27)
+out1 = LED(22)
+out2 = LED(10)
+hit = LED(9)
+error = LED(11)
+
+spin1 = LED(5)
+spin1 = LED(6)
+spin1 = LED(13)
+spin1 = LED(19)
+spin1 = LED(26)
+spin1 = LED(21)
+spin1 = LED(20)
+spin1 = LED(16)
+spin1 = LED(12)
+spin1 = LED(7)
+spin1 = LED(8)
+spin1 = LED(25)
+
+
+while True:
+	led01.on()
+	sleep(1)
+	led01.off()
+	led02.on()
+	sleep(1)
+	led02.off()
+	led03.on()
+	sleep(1)
+
