@@ -35,6 +35,7 @@ def game_balls(balls):
     print('2 balls')
     ball1.on()
     ball2.on()
+    ball3.off()
   elif balls == 3:
     print('3 balls')
     ball1.on()
