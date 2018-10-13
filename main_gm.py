@@ -29,6 +29,8 @@ def game_balls(balls):
   if balls == 1:
     print('1 ball')
     ball1.on
+    ball2.off()
+    ball3.off()
   elif balls == 2:  
     print('2 balls')
     ball1.on()
@@ -38,30 +40,45 @@ def game_balls(balls):
     ball1.on()
     ball2.on()
     ball3.on()
+  elif balls == 0:
+    print('0 balls')
+    ball1.off()
+    ball2.off()
+    ball3.off()  
   else:
-    print('no balls')
+    print('code error')
     
 def game_strikes(strikes):
   if strikes == 1:
     print('1 strikes')
     strike1.on()
+    strike2.off()
   elif strikes == 2:
     print('2 strikes')
     strike1.on()
     strike2.on()
+  elif strikes == 0:
+    print('2 strikes')
+    strike1.off()
+    strike2.off()
   else:
-    print('no strikes')
+    print('code error')
 
 def game_outs(outs):
   if outs == 1:
     print('1 outs')
     out1.on()
+    out2.off()
   elif outs == 2:
     print('2 outs')
     out1.on()
     out2.on()
+  elif outs == 0:
+    print('0 outs')
+    out1.off()
+    out2.off()
   else:
-    print('no outs')
+    print('code error')
 
 count = 0 
 
