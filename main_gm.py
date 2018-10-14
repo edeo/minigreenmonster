@@ -9,26 +9,11 @@ strike1 = LED(17)
 strike2 = LED(27)
 out1 = LED(22)
 out2 = LED(10)
-hit = LED(9)
-error = LED(11)
 
-spin01 = LED(5)
-spin02 = LED(6)
-spin03 = LED(13)
-spin04 = LED(19)
-spin05 = LED(26)
-spin06 = LED(21)
-spin07 = LED(20)
-spin08 = LED(16)
-spin09 = LED(12)
-spin10 = LED(7)
-spin11 = LED(8)
-spin12 = LED(25)
 
 def game_balls(balls):
   if balls == 1:
-    print('1 ball')
-    ball1.on
+    ball1.on()
     ball2.off()
     ball3.off()
   elif balls == 2:  
@@ -81,23 +66,20 @@ def game_outs(outs):
   else:
     print('code error')
 
-count = 0 
+count = 0
 
-games = 'https://statsapi.mlb.com/api/v1/schedule/postseason?hydrate=hydrations,linescore&season=2018'
 
 while(count < 10000):
+    games = 'https://statsapi.mlb.com/api/v1/schedule/postseason?hydrate=hydrations,linescore&season=2018'
     g = requests.get(url = games)
     games=g.json()
-  
     balls   = games['dates'][10]['games'][1]['linescore']['balls']
     strikes = games['dates'][10]['games'][1]['linescore']['strikes']
     outs   = games['dates'][10]['games'][1]['linescore']['outs']
-
     game_balls(balls)
     game_strikes(strikes)
     game_outs(outs)
-    
     count = count+1
-    sleep(2)
+    sleep(3)
 
 
