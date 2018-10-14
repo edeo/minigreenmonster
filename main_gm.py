@@ -16,6 +16,7 @@ def game_balls(balls):
     ball1.on()
     ball2.off()
     ball3.off()
+    print('1 ball')
   elif balls == 2:  
     print('2 balls')
     ball1.on()
@@ -44,7 +45,7 @@ def game_strikes(strikes):
     strike1.on()
     strike2.on()
   elif strikes == 0:
-    print('2 strikes')
+    print('0 strikes')
     strike1.off()
     strike2.off()
   else:
