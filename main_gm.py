@@ -74,9 +74,9 @@ while(count < 10000):
     games = 'https://statsapi.mlb.com/api/v1/schedule/postseason?hydrate=hydrations,linescore&season=2018'
     g = requests.get(url = games)
     games=g.json()
-    balls   = games['dates'][10]['games'][1]['linescore']['balls']
-    strikes = games['dates'][10]['games'][1]['linescore']['strikes']
-    outs   = games['dates'][10]['games'][1]['linescore']['outs']
+    balls   = games['dates'][11]['games'][0]['linescore']['balls']
+    strikes = games['dates'][11]['games'][0]['linescore']['strikes']
+    outs   = games['dates'][11]['games'][0]['linescore']['outs']
     game_balls(balls)
     game_strikes(strikes)
     game_outs(outs)
