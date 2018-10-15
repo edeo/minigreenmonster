@@ -18,6 +18,9 @@ Add 2 leds for top and bottom of innings
 
 Make a nice container for the board. 
 
-        minigreenmonster/greenmonsterpi.jpg
+Here are pictures of the board
       
-![alt text](minigreenmonster/greenmonsterpi.jpg)
+[picture1](https://github.com/edeo/minigreenmonster/blob/master/greenmonsterpi.jpg)
+
+[picture1](https://github.com/edeo/minigreenmonster/blob/master/greenmonsterpi2.jpg)
+
