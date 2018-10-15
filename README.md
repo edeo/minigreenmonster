@@ -22,5 +22,9 @@ Here are pictures of the board
       
 [picture1](https://github.com/edeo/minigreenmonster/blob/master/greenmonsterpi.jpg)
 
-[picture1](https://github.com/edeo/minigreenmonster/blob/master/greenmonsterpi2.jpg)
+[picture2](https://github.com/edeo/minigreenmonster/blob/master/greenmonsterpi2.jpg)
+
+Here is a video example of the board working in real time:
+
+[video example](https://youtu.be/VCtb6QCX2nI)
 
